@@ -4,7 +4,7 @@
 sudo ls > /dev/null 2>&1
 
 #set led indicator flashing on
-./flash-error-on.sh &
+sudo ./flash-error-on.sh &
 
 #update and upgrade
 sudo apt update -y
