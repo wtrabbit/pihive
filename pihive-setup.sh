@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#check for root
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
-
 #update and upgrade
 sudo apt update -y
 sudo apt upgrade -y
