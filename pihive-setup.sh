@@ -3,6 +3,9 @@
 #check/request root
 sudo ls > /dev/null 2>&1
 
+#set led indicator flashing on
+./flash-error-on.sh &
+
 #update and upgrade
 sudo apt update -y
 sudo apt upgrade -y
@@ -19,3 +22,5 @@ cd uhubctl
 make
 cd ..
 
+#set led indicator flashing off
+./flash-error-off.sh
