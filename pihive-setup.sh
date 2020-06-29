@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#check/request root
+sudo ls > /dev/null 2>@1
+
 #update and upgrade
 sudo apt update -y
 sudo apt upgrade -y
